@@ -1,259 +1,179 @@
-# Persona-Driven Document Intelligence System
+# 📄 Persona-Driven Document Intelligence System
 
-## Round 1B: "Connect What Matters — For the User Who Matters"
+*Adobe India Hackathon 2025 — Round 1B Submission*
+**"Connect What Matters — For the User Who Matters"**
 
-A sophisticated document analysis system that intelligently extracts and prioritizes the most relevant sections from PDF collections based on specific personas and their job-to-be-done tasks.
+A smart document analysis system that extracts and ranks relevant content from PDFs based on user roles and tasks.
 
-## 🎯 Challenge Overview
+---
 
-This system acts as an intelligent document analyst, capable of:
-- Processing diverse document collections (3-10 PDFs)
-- Understanding different persona types and their expertise areas
-- Extracting relevant content based on specific job-to-be-done tasks
-- Providing ranked, refined analysis tailored to user needs
+## 🚀 Overview
 
-## 🚀 Key Features
+This system works like a personal document analyst:
 
-### Universal Document Processing
-- *Multi-domain Support*: Research papers, financial reports, textbooks, technical manuals
-- *Adaptive Content Recognition*: Automatic detection of academic, business, educational, and technical content
-- *Intelligent Segmentation*: Context-aware text parsing based on document type
+* Processes 3–10 PDFs
+* Understands *who* the user is (persona)
+* Knows *what* the user wants to achieve (job-to-be-done)
+* Extracts and ranks *only the most relevant content*
 
-### Persona-Driven Analysis
-- *Role-Specific Processing*: Tailored extraction for researchers, students, analysts, entrepreneurs
-- *Task-Oriented Ranking*: Content prioritization based on job-to-be-done requirements
-- *Expertise-Aware Refinement*: Content filtering matching persona expertise levels
+---
 
-### Advanced Intelligence Features
-- *Semantic Understanding*: Uses sentence transformers for deep content comprehension
-- *Multi-Method Scoring*: Combines TF-IDF, semantic similarity, and keyword matching
-- *Content Type Optimization*: Specialized processing pipelines for different document types
+## 🔍 Key Capabilities
 
-## 📋 Test Cases Supported
+### ✅ Multi-Type PDF Analysis
 
-### Test Case 1: Academic Research
-- *Documents*: 4 research papers on "Graph Neural Networks for Drug Discovery"
-- *Persona*: PhD Researcher in Computational Biology
-- *Job*: Literature review focusing on methodologies, datasets, and performance benchmarks
+* Supports research papers, financial reports, textbooks, manuals
+* Adapts to academic, business, educational, and technical formats
 
-### Test Case 2: Business Analysis
-- *Documents*: 3 annual reports from competing tech companies
-- *Persona*: Investment Analyst
-- *Job*: Analyze revenue trends, R&D investments, and market positioning strategies
+### 🎯 Persona-Based Extraction
 
-### Test Case 3: Educational Content
-- *Documents*: 5 organic chemistry textbook chapters
-- *Persona*: Undergraduate Chemistry Student
-- *Job*: Identify key concepts and mechanisms for exam preparation on reaction kinetics
+* Tailors content for roles like *researchers, **students, **analysts, **entrepreneurs*
+* Prioritizes sections based on the user’s task
 
-## 🛠 Installation & Setup
+### 🧠 Intelligent Processing
 
-### Prerequisites
+* Uses *sentence transformers, **TF-IDF, and **keyword matching*
+* Ranks and refines extracted content based on document type and job requirements
+
+---
+
+## 🧪 Supported Use Cases
+
+| Test Case           | Persona              | Task                                         |
+| ------------------- | -------------------- | -------------------------------------------- |
+| Academic Research   | PhD Researcher       | Literature review on GNNs for drug discovery |
+| Business Analysis   | Investment Analyst   | Compare revenue, R\&D, and strategies        |
+| Educational Support | UG Chemistry Student | Extract key concepts on reaction kinetics    |
+
+---
+
+## 🛠 Setup & Installation
+
+### 🔧 Requirements
+
 bash
-python >= 3.8
+Python 3.8+
 pip install -r requirements.txt
 
 
-### Dependencies
+### 📦 Dependencies
+
 bash
 pip install PyPDF2 sentence-transformers scikit-learn numpy
 
 
-### Quick Start
-1. *Clone Repository*
-   bash
-   git clone https://github.com/jhaaj08/Adobe-India_Hackathon25.git
-   cd Adobe-India_Hackathon25
-   
+### 🚀 Run
 
-2. *Install Dependencies*
-   bash
-   pip install -r requirements.txt
-   
+bash
+git clone https://github.com/jhaaj08/Adobe-India_Hackathon25.git
+cd Adobe-India_Hackathon25
+python enhanced_doc_intelligence.py
 
-3. *Prepare Documents*
-   - Place PDF files in the project directory or create subdirectories (PDFs/, documents/)
-   - The system automatically searches multiple locations
 
-4. *Run Analysis*
-   bash
-   python enhanced_doc_intelligence.py
-   
+---
 
 ## 📁 Project Structure
 
 
-├── enhanced_doc_intelligence.py    # Main processing system
-├── requirements.txt               # Dependencies
-├── README.md                     # This file
-├── approach_explanation.md       # Methodology documentation
-├── Dockerfile                    # Container setup
-├── Collection 1/                 # Academic research test case
-│   ├── challenge1b_input.json
-│   └── challenge1b_output.json
-├── Collection 2/                 # Business analysis test case
-│   ├── challenge1b_input.json
-│   └── challenge1b_output.json
-└── Collection 3/                 # Educational content test case
-    ├── challenge1b_input.json
-    └── challenge1b_output.json
+├── enhanced_doc_intelligence.py    # Main system
+├── requirements.txt                # Python packages
+├── approach_explanation.md         # Methodology
+├── Collection 1/2/3                # Input/Output samples
+├── Dockerfile                      # Optional container setup
+└── README.md                       # This file
 
 
-## 🔧 Configuration
+---
 
-### Input Format (challenge1b_input.json)
+## 📤 Input Format (JSON)
+
 json
 {
   "challenge_info": {
-    "challenge_id": "round_1b_001",
-    "test_case_name": "academic_research",
-    "description": "Graph Neural Networks for Drug Discovery Literature Review"
+    "test_case_name": "academic_research"
   },
-  "documents": [
-    {
-      "filename": "research_paper.pdf",
-      "title": "Paper Title"
-    }
-  ],
-  "persona": {
-    "role": "PhD Researcher in Computational Biology"
-  },
-  "job_to_be_done": {
-    "task": "Prepare comprehensive literature review"
-  }
+  "documents": [{ "filename": "paper1.pdf", "title": "Paper Title" }],
+  "persona": { "role": "PhD Researcher" },
+  "job_to_be_done": { "task": "Literature review" }
 }
 
 
-### Output Format (challenge1b_output.json)
+## 📥 Output Format (JSON)
+
 json
 {
-  "metadata": {
-    "input_documents": ["doc1.pdf", "doc2.pdf"],
-    "persona": "PhD Researcher in Computational Biology",
-    "job_to_be_done": "Prepare comprehensive literature review",
-    "processing_timestamp": "2025-01-XX"
-  },
+  "metadata": { "persona": "PhD Researcher", "job_to_be_done": "Literature review" },
   "extracted_sections": [
-    {
-      "document": "research_paper.pdf",
-      "section_title": "Methodology Section",
-      "importance_rank": 1,
-      "page_number": 3
-    }
+    { "document": "paper1.pdf", "section_title": "Methodology", "importance_rank": 1, "page_number": 3 }
   ],
   "subsection_analysis": [
-    {
-      "document": "research_paper.pdf",
-      "refined_text": "Detailed analysis text...",
-      "page_number": 3
-    }
+    { "document": "paper1.pdf", "refined_text": "Deep analysis text...", "page_number": 3 }
   ]
 }
 
 
-## 🐳 Docker Deployment
+---
 
-### Build Container
+## 🐳 Docker (Optional)
+
 bash
 docker build -t persona-doc-intelligence .
-
-
-### Run Container
-bash
 docker run -v $(pwd)/data:/app/data persona-doc-intelligence
 
 
-## ⚡ Performance Specifications
+---
 
-- *CPU Only*: No GPU requirements
-- *Model Size*: ≤ 1GB (using efficient sentence transformers)
-- *Processing Time*: ≤ 60 seconds for 3-5 documents
-- *Offline Operation*: No internet access required during execution
+## ⚙ Performance
 
-## 🎯 Scoring Criteria
+* *CPU-only*: No GPU required
+* *Model size*: Under 1GB
+* *Speed*: Processes 3–5 PDFs in ≤ 60 seconds
+* *Offline*: Works without internet
 
-| Criteria | Max Points | Description |
-|----------|------------|-------------|
-| *Section Relevance* | 60 | Quality of section matching persona + job requirements with proper ranking |
-| *Sub-Section Relevance* | 40 | Granular subsection extraction and ranking quality |
+---
 
-## 🧠 System Architecture
+## 🧠 Inside the System
 
-### Content Type Detection
-- *Academic*: Methodologies, datasets, benchmarks, research findings
-- *Business*: Financial metrics, strategies, market analysis, competitive positioning
-- *Educational*: Key concepts, mechanisms, exam-relevant material
-- *Technical*: Procedures, instructions, feature descriptions
-- *Recipe*: Ingredients, instructions, cooking methods
-- *Travel*: Destinations, recommendations, cultural information
+### Content Matching Strategy
 
-### Relevance Scoring Algorithm
-1. *Semantic Similarity*: Deep understanding using sentence transformers
-2. *TF-IDF Analysis*: Statistical relevance measurement
-3. *Keyword Matching*: Persona and task-specific term identification
-4. *Content Type Scoring*: Domain-specific relevance calculation
-5. *Task Bonuses*: Job-specific content prioritization
-6. *Structure Analysis*: Document organization and length considerations
+* *Semantic Analysis* using sentence-transformers
+* *TF-IDF & Keywords* for statistical + contextual relevance
+* *Document Type Optimization* for domain-specific extraction
+* *Persona + Task Matching* for precision ranking
 
-### Content Refinement Pipeline
-- *Academic*: Preserves methodological details and performance metrics
-- *Business*: Focuses on quantitative data and strategic insights
-- *Educational*: Emphasizes concepts and exam preparation material
-- *Technical*: Highlights procedural information and instructions
+---
 
-## 🔍 Advanced Features
+## ✨ Sample Use Cases
 
-### Intelligent Text Processing
-- *Unicode Normalization*: Handles special characters and formatting
-- *Pattern Recognition*: Domain-specific content identification
-- *Semantic Segmentation*: Context-aware text chunking
-- *Quality Filtering*: Substantial content validation
-
-### Adaptive Algorithms
-- *Dynamic Weighting*: Content-type specific scoring adjustments
-- *Multi-criteria Optimization*: Balanced relevance assessment
-- *Persona Matching*: Role-specific content prioritization
-- *Task Alignment*: Job-focused section ranking
-
-## 📊 Usage Examples
-
-### Academic Research Analysis
 python
-# Processes research papers for literature reviews
-# Focuses on methodologies, datasets, and benchmarks
-# Optimized for PhD-level content extraction
+# For researchers:
+# Extract methodology, datasets, and benchmarks from academic PDFs
+
+# For analysts:
+# Extract revenue, market share, and strategic insights from reports
+
+# For students:
+# Extract exam-relevant concepts and summaries from textbooks
 
 
-### Business Intelligence
-python
-# Analyzes annual reports and financial documents
-# Extracts revenue trends and strategic insights
-# Tailored for investment analysis workflows
+---
 
+## ❗ Limitations
 
-### Educational Support
-python
-# Processes textbooks and study materials
-# Identifies key concepts and exam-relevant content
-# Optimized for student learning objectives
+* Focused on *PDFs only*
+* Designed for *CPU environments*
+* No support for *real-time online search*
 
+---
 
-## 🛡 Constraints & Limitations
+## 📬 Contact
 
-- *CPU-Only Processing*: Optimized for standard hardware
-- *Model Size Limit*: Uses efficient transformers within 1GB constraint
-- *Processing Time*: Designed for real-time analysis (≤60 seconds)
-- *Offline Operation*: No external API dependencies
-- *PDF Format*: Primary focus on PDF document processing
+* GitHub: [Adobe-India\_Hackathon25](https://github.com/jhaaj08/Adobe-India_Hackathon25)
+* Issues & Suggestions → Open a GitHub Issue
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (git checkout -b feature/amazing-feature)
-3. Commit changes (git commit -m 'Add amazing feature')
-4. Push to branch (git push origin feature/amazing-feature)
-5. Open Pull Request
+---
 
 ## 📄 License
 
-This project is developed for Adobe India Hackathon 2025 - Round 1B.
+Built for Adobe India Hackathon 2025
+*"Connect What Matters — For the User Who Matters"*
