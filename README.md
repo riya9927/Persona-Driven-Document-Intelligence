@@ -143,21 +143,6 @@ docker run -v $(pwd)/data:/app/data persona-doc-intelligence
 
 ---
 
-## ✨ Sample Use Cases
-
-python
-# For researchers:
-# Extract methodology, datasets, and benchmarks from academic PDFs
-
-# For analysts:
-# Extract revenue, market share, and strategic insights from reports
-
-# For students:
-# Extract exam-relevant concepts and summaries from textbooks
-
-
----
-
 ## ❗ Limitations
 
 * Focused on *PDFs only*
