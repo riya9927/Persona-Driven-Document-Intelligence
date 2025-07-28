@@ -1,0 +1,31 @@
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements file
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code
+COPY . .
+
+# Create directory structure
+RUN mkdir -p "Collection 1/PDFs" \
+    "Collection 2/PDFs" \
+    "Collection 3/PDFs"
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV TOKENIZERS_PARALLELISM=false
+
+# Command to run the application
+CMD ["python", "main.py"]

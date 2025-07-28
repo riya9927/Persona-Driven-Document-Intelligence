@@ -1,0 +1,31 @@
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_001",
+    "test_case_name": "academic_research",
+    "description": "Graph Neural Networks for Drug Discovery Literature Review"
+  },
+  "documents": [
+    {
+      "filename": "GraphFormerTransformer-based Molecular Representation.pdf",
+      "title": "GraphFormer: Transformer-based Molecular Representation Learning for Drug-Target Interaction Prediction"
+    },
+    {
+      "filename": "Graph-based Virtual Screening with Heterogeneous Message.pdf",
+      "title": "Graph-based Virtual Screening with Heterogeneous Message Passing Networks"
+    },
+    {
+      "filename": "Paper 1_ Molecular Property Prediction via Attention-Enhanced Graph Convolutional Networks.pdf",
+      "title": "Molecular Property Prediction via Attention-Enhanced Graph Convolutional Networks"
+    },
+    {
+      "filename": "Graph Neural Networks for Drug Discovery_ A Comprehensive Review.pdf",
+      "title": "Graph Neural Networks for Drug Discovery: A Comprehensive Review"
+    }
+  ],
+  "persona": {
+    "role": "PhD Researcher in Computational Biology"
+  },
+  "job_to_be_done": {
+    "task": "Prepare a comprehensive literature review focusing on methodologies, datasets, and performance benchmarks"
+  }
+}

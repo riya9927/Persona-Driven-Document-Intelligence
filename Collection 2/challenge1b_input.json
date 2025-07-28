@@ -1,0 +1,27 @@
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_003",
+    "test_case_name": "business_analysis",
+    "description": "Tech Company Competition Analysis"
+  },
+  "documents": [
+    {
+      "filename": "HCL_Technologies_Annual_Report_2023.pdf",
+      "title": "HCL Technologies Annual Report 2023"
+    },
+    {
+      "filename": "Cognizant_Annual_Report_2023.pdf",
+      "title": "Cognizant Annual Report 2023"
+    },
+    {
+      "filename": "Microsoft_Annual_Report_2023.pdf",
+      "title": "Microsoft Annual Report 2023"
+    }
+  ],
+  "persona": {
+    "role": "Investment Analyst"
+  },
+  "job_to_be_done": {
+    "task": "Analyze revenue trends, R&D investments, and market positioning strategies"
+  }
+}

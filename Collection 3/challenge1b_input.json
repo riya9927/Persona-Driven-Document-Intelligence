@@ -1,0 +1,35 @@
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_003",
+    "test_case_name": "educational_content",
+    "description": "Organic Chemistry Study Materials"
+  },
+  "documents": [
+    {
+      "filename": "Chapter_1_-_Introduction_to_Organic_Chemistry.pdf",
+      "title": "Chapter 1 - Introduction to Organic Chemistry"
+    },
+    {
+      "filename": "Chapter_2_-_Alkanes_and_Cycloalkanes.pdf",
+      "title": "Chapter 2 - Alkanes and Cycloalkanes"
+    },
+    {
+      "filename": "Chapter_3_-_Alkenes_and_Alkynes.pdf",
+      "title": "Chapter 3 - Alkenes and Alkynes"
+    },
+    {
+      "filename": "Chapter_4_-_Aromatic_Compounds.pdf",
+      "title": "Chapter 4 - Aromatic Compounds"
+    },
+    {
+      "filename": "Chapter_5_-_Alcohols_and_Ethers.pdf",
+      "title": "Chapter 5 - Alcohols and Ethers"
+    }
+  ],
+  "persona": {
+    "role": "Undergraduate Chemistry Student"
+  },
+  "job_to_be_done": {
+    "task": "Identify key concepts and mechanisms for exam preparation on reaction kinetics"
+  }
+}
