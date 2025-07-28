@@ -72,19 +72,6 @@ python enhanced_doc_intelligence.py
 
 ---
 
-## 📁 Project Structure
-
-
-├── enhanced_doc_intelligence.py    # Main system
-├── requirements.txt                # Python packages
-├── approach_explanation.md         # Methodology
-├── Collection 1/2/3                # Input/Output samples
-├── Dockerfile                      # Optional container setup
-└── README.md                       # This file
-
-
----
-
 ## 📤 Input Format (JSON)
 
 json
