@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Chapter_1_-_Introduction_to_Organic_Chemistry.pdf",
+      "Chapter_2_-_Alkanes_and_Cycloalkanes.pdf",
+      "Chapter_3_-_Alkenes_and_Alkynes.pdf",
+      "Chapter_4_-_Aromatic_Compounds.pdf",
+      "Chapter_5_-_Alcohols_and_Ethers.pdf"
+    ],
+    "persona": "Undergraduate Chemistry Student",
+    "job_to_be_done": "Identify key concepts and mechanisms for exam preparation on reaction kinetics",
+    "processing_timestamp": "2025-07-28T23:38:02.925770",
+    "processing_time_seconds": 0.12
+  },
+  "extracted_sections": [
+    {
+      "document": "Chapter_1_-_Introduction_to_Organic_Chemistry.pdf",
+      "section_title": "- Introduction to Organic Chemistry",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_2_-_Alkanes_and_Cycloalkanes.pdf",
+      "section_title": "- Alkanes and Cycloalkanes",
+      "importance_rank": 2,
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_5_-_Alcohols_and_Ethers.pdf",
+      "section_title": "- Alcohols and Ethers",
+      "importance_rank": 3,
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_4_-_Aromatic_Compounds.pdf",
+      "section_title": "- Aromatic Compounds",
+      "importance_rank": 4,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Chapter_1_-_Introduction_to_Organic_Chemistry.pdf",
+      "refined_text": "Chapter 1 - Introduction to Organic Chemistry\n- Definition and Scope\n- Structure and Bonding in Organic Molecules\n- Functional Groups Overview\nPage 1",
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_2_-_Alkanes_and_Cycloalkanes.pdf",
+      "refined_text": "Chapter 2 - Alkanes and Cycloalkanes\n- Structure and Nomenclature\n- Physical and Chemical Properties\n- Conformations and Reactions\nPage 1",
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_5_-_Alcohols_and_Ethers.pdf",
+      "refined_text": "Chapter 5 - Alcohols and Ethers\n- Structure and Nomenclature\n- Synthesis and Reactions\n- Applications in Industry\nPage 1",
+      "page_number": 1
+    },
+    {
+      "document": "Chapter_4_-_Aromatic_Compounds.pdf",
+      "refined_text": "Chapter 4 - Aromatic Compounds\n- Aromaticity and Benzene\n- Electrophilic Aromatic Substitution\n- Substituent Effects\nPage 1",
+      "page_number": 1
+    }
+  ]
+}
