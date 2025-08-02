@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "input_documents": [
+      "HCL_Technologies_Annual_Report_2023.pdf",
+      "Cognizant_Annual_Report_2023.pdf",
+      "Microsoft_Annual_Report_2023.pdf"
+    ],
+    "persona": "Investment Analyst",
+    "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies",
+    "processing_timestamp": "2025-07-28T23:38:02.806515",
+    "processing_time_seconds": 0.12
+  },
+  "extracted_sections": [
+    {
+      "document": "Microsoft_Annual_Report_2023.pdf",
+      "section_title": "Microsoft Corporation",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "HCL_Technologies_Annual_Report_2023.pdf",
+      "section_title": "HCL Technologies Annual Report (2023)",
+      "importance_rank": 2,
+      "page_number": 1
+    },
+    {
+      "document": "Cognizant_Annual_Report_2023.pdf",
+      "section_title": "Cognizant Technology Solutions",
+      "importance_rank": 3,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Microsoft_Annual_Report_2023.pdf",
+      "refined_text": "Microsoft Corporation\nAnnual Report 2023\nHighlights:\n- Revenue: $211.9 billion\n- Net Income: $72.7 billion\n- Focus: AI integration in Office 365, Azure expansion, sustainability\nPage 1",
+      "page_number": 1
+    },
+    {
+      "document": "HCL_Technologies_Annual_Report_2023.pdf",
+      "refined_text": "HCL Technologies Annual Report (2023)\nHCL Technologies Ltd. Annual Report 2023\nHighlights:\n- Revenue: $12. 8 billion\n- Net Income: $2",
+      "page_number": 1
+    },
+    {
+      "document": "Cognizant_Annual_Report_2023.pdf",
+      "refined_text": "Cognizant Technology Solutions\nAnnual Report 2023\nHighlights:\n- Revenue: $19.4 billion\n- Net Income: $2.3 billion\n- Focus: Digital engineering, cloud modernization, global delivery model\nPage 1",
+      "page_number": 1
+    }
+  ]
+}
